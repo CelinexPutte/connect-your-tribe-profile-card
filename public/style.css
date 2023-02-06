@@ -1,56 +1,132 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
+  box-sizing:border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+html {
+  height:100vh;
+}
+
 body {
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background: rgba(188, 105, 138, 0.5);
-  background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
-    radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
-    radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
-  background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  perspective: 600px;
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+.business-card {
+  transform-style: preserve-3d;
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  transition: transform 1s;
+  width: max-content;
+  margin: auto;
 }
 
-article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
-  color: white;
+.business-card.flip {
+  transform: rotateY(180deg);
+}
 
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+.business-card.flip article.back {
+  pointer-events: all;
+}
+
+article.front {
+  width: 20em;
+  height: 30em;
+  background: linear-gradient(0deg, rgba(243, 205, 231) 50%, #ff5bd9 100%);
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: relative;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+article.back {
+  width: 20em;
+  height: 30em;
+  background: linear-gradient(0deg, rgba(243, 205, 231) 50%, #ff5bd9 100%);
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  border-radius:1rem;
+  position: absolute;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+article.back::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background-color: #fff;
+  border-radius:0.5rem;
+}
+
+header.front {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+header.back {
+  margin: 2em;
+  position: relative;
 }
 
 h1 {
-  text-align: center;
+  font-size: 1.5em;
+}
+
+h1.back {
+  color:#ff5bd9;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+img {
+  width:9em;
+  border-radius:5em;
+  border:5px solid #fff;
+  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  transition: 1s;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+article > p {
+  padding:3rem 2rem;
+  margin-top: 0;
+  background:rgba(255,255,255, 0.5);
+  text-align:center;
+  border-radius: 0 0 1rem 1rem;
+  width:100%;
+}
+
+ul {
+  text-align: left;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  color: rgb(106, 0, 255);
+  display: block;
+}
+
+p.ps {
+  font-size: 0.5rem;
+  margin-top: 3.5rem;
 }
