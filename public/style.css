@@ -1,132 +1,113 @@
 * {
-  box-sizing:border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #000;
 }
 
-html {
-  height:100vh;
+:root {
+  --color-blue: #96b8ff;
+  --color-purple: #ca85ff;
+  --color-creme: #f2f5ea;
+  --color-pink: #ff5aac;
+  --color-black: #000;
+  --color-white: #fff;
+  --border-basic: solid 2px var(--color-black);
+  --border-radius-basic: 5px;
+  --gap-basic: ?;
 }
 
 body {
-  perspective: 600px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* gap: var(--gap-basic); */
+  background: linear-gradient(0deg, var(--color-purple) 0%, var(--color-pink) 100%);
 }
 
-.business-card {
-  transform-style: preserve-3d;
-  position: relative;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  transition: transform 1s;
-  width: max-content;
+/* Basics */
+
+section, h1, .quote {
+  border: var(--border-basic);
+  border-radius: var(--border-radius-basic);
+  padding: 1rem 1.5rem;
+  background-color: var(--color-creme);
+  width: 100%;
+  max-width: 35rem;
   margin: auto;
 }
 
-.business-card.flip {
-  transform: rotateY(180deg);
-}
-
-.business-card.flip article.back {
-  pointer-events: all;
-}
-
-article.front {
-  width: 20em;
-  height: 30em;
-  background: linear-gradient(0deg, rgba(243, 205, 231) 50%, #ff5bd9 100%);
-  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
-  border-radius:1rem;
-  position: relative;
-  z-index: 1;
-  backface-visibility: hidden;
-}
-
-article.back {
-  width: 20em;
-  height: 30em;
-  background: linear-gradient(0deg, rgba(243, 205, 231) 50%, #ff5bd9 100%);
-  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
-  border-radius:1rem;
-  position: absolute;
-  transform: rotateY(180deg);
-  pointer-events: none;
-}
-
-article.back::before {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  right: 0.5rem;
-  bottom: 0.5rem;
-  background-color: #fff;
-  border-radius:0.5rem;
-}
-
-header.front {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-header.back {
-  margin: 2em;
-  position: relative;
-}
-
-h1 {
-  font-size: 1.5em;
-}
-
-h1.back {
-  color:#ff5bd9;
-  margin-bottom: 0.5em;
+section {
+  height: fit-content;
 }
 
 h2 {
-  font-size: 0.8em;
-  font-style: italic;
-  margin-top: 2rem;
-}
-
-img {
-  width:9em;
-  border-radius:5em;
-  border:5px solid #fff;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  transition: 1s;
-  margin-top: 4em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-img:hover {
-  transform: scale(1.2);
-}
-
-article > p {
-  padding:3rem 2rem;
-  margin-top: 0;
-  background:rgba(255,255,255, 0.5);
-  text-align:center;
-  border-radius: 0 0 1rem 1rem;
-  width:100%;
+  margin-bottom: 0.5rem;
+  font-family: Century Gothic;
 }
 
 ul {
-  text-align: left;
-  margin: 0;
-  padding-left: 0;
   list-style: none;
 }
 
-a {
-  color: rgb(106, 0, 255);
-  display: block;
+/* Profile picture */
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
 }
 
-p.ps {
-  font-size: 0.5rem;
-  margin-top: 3.5rem;
+.profile-pic > img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 20rem;
+}
+
+/* Name */
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: Century Gothic;
+}
+
+/* Quote */
+.quote {
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* About */
+
+
+/* Hobby's */
+
+
+/* Skills */
+.skills-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Contact */
+.links a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 600;
+  color: var(--color-purple);
+}
+
+/* Media query's */
+@media screen and (min-width: 41rem) {
+  section {
+    background-color: greenyellow;
+  }
 }

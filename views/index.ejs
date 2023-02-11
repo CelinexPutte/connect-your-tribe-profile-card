@@ -1,32 +1,50 @@
 <%- include('./partials/head') %>
 
- <div class="business-card">
-    <article class="front">
-      <img src="<%= member.avatar %>" alt="Foto van Celine van der Putte">
-    
-      <header class="front">
-        <h1><%= member.name %> <%= member.prefix %> <%= member.surname %></h1>
-        <h2>'Be a cupcake in a world full of muffins'</h2>
-        <p class="ps">P.S. Click to flip</p>
-      </header>
-    </article>
-    
-    <article class="back">
-      <header class="back">
-        <h1 class="back">Over mij</h1>
-          <p><%- member.bio.html %></p>
-        <h1 class="back">Hobby's</h1>
-          <ul>
-            <li>🏐 Volleybal</li>
-            <li>🎮 Gamen</li>
-            <li>🏎️ Formule 1</li>
-          </ul>
-        <h1 class="back">Contact</h1>
-        <p><a href="mailto:cnvanderputte@gmail.com">cnvanderputte@gmail.com </a>
-        <a href="https://www.linkedin.com/in/celine-van-der-putte-a12798197/">LinkedIn</a>
-        </p>
-      </header>
-    </article>
-  </div>
+  <section class="profile-pic">
+    <img src="images/celine-vierkant.jpg" alt="Foto van Celine van der Putte">
+  </section>
+
+  <h1><%= member.name %> <%= member.prefix %> <%= member.surname %></h1>
+
+  <p class="quote">"Ik ben niet gek, ik ben zeldzaam"</p>
+
+  <section class="about">
+    <h2>Over mij</h2>
+    <p><%- member.bio.html %></p>
+  </section>
+
+  <section class="hobbys">
+    <h2>Hobby's</h2>
+    <ul>
+      <li>🏐 Volleybal</li>
+      <li>🎮 Gamen</li>
+      <li>🏎️ Formule 1</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-layout">
+      <ul class="skills-text">
+        <li>Nauwkeurig werken</li>
+        <li>Schetsen maken</li>
+        <li>Oplossingen zoeken</li>
+      </ul>
+      <ul class="skills-stars">
+        <li>⭐⭐⭐</li>
+        <li>⭐</li>
+        <li>⭐⭐</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:cnvanderputte@gmail.com">E-mail</a></li>
+        <li><a href="https://github.com/CelinexPutte">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/celine-van-der-putte-a12798197/">LinkedIn</a></li>
+      </ul>
+  </section>
 
 <%- include('./partials/foot') %>
