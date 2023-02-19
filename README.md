@@ -25,11 +25,11 @@ De volgende gegevens van mij zijn te vinden:
 
 Desktop:
 
-<img src="https://user-images.githubusercontent.com/112859814/219973333-35a5ac67-84ab-4fef-87cc-7c71e2eb1057.png" alt="Desktop" width=100%>
+<img src="https://user-images.githubusercontent.com/112859814/219973995-e7fee4fe-98cd-4cff-837d-9b48085c858e.png" alt="Desktop" width=100%>
 
 Mobiel:
 
-<img src="https://user-images.githubusercontent.com/112859814/219973409-1dc120eb-1349-42f8-861b-c498d93a1799.png" alt="Mobiel deel 1" width=25%> <img src="https://user-images.githubusercontent.com/112859814/219973411-220ccc8a-d1f0-4302-9831-c6a733d406e2.png" alt="Mobiel deel 2" width=25%>
+<img src="https://user-images.githubusercontent.com/112859814/219973998-663a2a67-440d-400b-abc8-39ecdb04043f.png" alt="Mobiel deel 1" width=25%> <img src="https://user-images.githubusercontent.com/112859814/219974002-dc93aa6d-f943-4e18-999a-064224cdebd0.png" alt="Mobiel deel 2" width=25%>
 
 Mijn visitekaartje vind je [hier](https://excited-duck-vest.cyclic.app/).
 
