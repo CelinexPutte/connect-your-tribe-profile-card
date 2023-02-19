@@ -38,7 +38,7 @@ main {
 
 /* Basics */
 
-section, h1, .quote {
+section, .profile-pic, h1, .quote {
 	border: var(--border-basic);
 	border-radius: var(--border-radius-basic);
 	padding: 1rem 1.5rem;
@@ -48,7 +48,7 @@ section, h1, .quote {
 	margin: auto;
 }
 
-section {
+section, .profile-pic {
 	height: fit-content;
 }
 
@@ -157,11 +157,16 @@ a:hover {
 		grid-area: contact;
 	}
 
-	section, h1, .quote {
+	section, .profile-pic, h1, .quote {
 		margin: 0;
+		transition: 0.5s;
 	}
 
-	section {
+	section:hover, .profile-pic:hover, h1:hover, .quote:hover {
+		scale: 1.05;
+	}
+
+	section, .profile-pic {
 		height: auto;
 	}
 
