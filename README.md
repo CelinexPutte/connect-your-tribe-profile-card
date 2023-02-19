@@ -3,11 +3,11 @@ Een persoonlijk visitekaartje met mijn hobby's, skills en contactgegevens.
 
 ## Inhoudsopgave
 
-  * [📄 Beschrijving](#beschrijving)
-  * [📌 Kenmerken](#kenmerken)
-  * [💻 Gebruik](#gebruik)
-  * [📁 Bronnen](#bronnen)
-  * [🔒 Licentie](#licentie)
+  * [📄 Beschrijving](#-beschrijving)
+  * [📌 Kenmerken](#-kenmerken)
+  * [💻 Gebruik](#-gebruik)
+  * [📁 Bronnen](#-bronnen)
+  * [🔒 Licentie](#-licentie)
 
 ## 📄 Beschrijving
 Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. Ik heb mijn visitekaartje ingedeeld door verschillende blokken te gebruiken. Hierbij heb ik gespeeld met de groote van de onderdelen. 
