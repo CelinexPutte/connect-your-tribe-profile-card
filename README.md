@@ -1,32 +1,48 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+# Visitekaartje
+Een persoonlijk visitekaartje met mijn hobby's, skills en contactgegevens.
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+  * [📄 Beschrijving](#beschrijving)
+  * [📌 Kenmerken](#kenmerken)
+  * [💻 Gebruik](#gebruik)
+  * [📁 Bronnen](#bronnen)
+  * [🔒 Licentie](#licentie)
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## 📄 Beschrijving
+Elke frontender bij FDND stelt zichzelf binnen de tribe voor door middel van een visitekaartje. Ik heb mijn visitekaartje ingedeeld door verschillende blokken te gebruiken. Hierbij heb ik gespeeld met de groote van de onderdelen. 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+De volgende gegevens van mij zijn te vinden:
+<ul>
+  <li>Foto van mij</li>
+  <li>Mijn naam</li>
+  <li>Quote die ik mooi vind</li>
+  <li>Stukje tekst over mij</li>
+  <li>Mijn hobby's</li>
+  <li>Mijn skills</li>
+  <li>Contactgegevens</li>
+</ul>
 
-## Installatie
+Desktop:
+(hier ss)
 
-## Gebruik
+Mobiel:
+(hier ss)
 
-## Bronnen
+## 📌 Kenmerken
+Voor dit project heb ik met node.js, express en ejs gewerkt. Daarnaast heb ik ook gewoon gebruik gemaakt van een css document.
 
-## Licentie
+## 💻 Gebruik
+Op de mobiele versie heb ik ervoor gezorgd dat alles goed leesbaar is door de blokken onder elkaar te plaatsen. Verder zitten hier geen animaties bij.
+
+Voor desktop heb ik een grid lay-out gebruikt om de blokken te positioneren. Ik heb overal dezelfde afstanden gebruikt. Daarnaast is er nog een klein scale effect als je met je muis over een blok beweegt.
+
+De linkjes bij het kopje 'contact' verwijzen allemaal door naar de betreffende gegevens.
+
+## 📁 Bronnen
+Voor mijn visitekaartje heb ik data van mezelf gebruikt uit de API. Deze is te vinden op (linkje).
+
+## 🔒 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
